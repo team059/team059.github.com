@@ -1,19 +1,32 @@
-# README #
+Jekyll Photo Grid Gallery
+=========
 
-A simple blog template for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.
+Jekyll theme based on [Blueprint: Google Grid Gallery](http://tympanus.net/codrops/?p=18699)
 
-Uses:
-* Twitter Bootstrap 3.2.0
-* Font Awesome 4.2.0
+## How to use
+1. Place a large image in `/img/large/`
+2. Place a thumbnail version of the same image in `/img/thumb/`. _Remember to use the same file name_
+3. Construction a post to display the image. Use the follow as an example:
+```txt
+---
+layout: default
+date:   2014-04-06 23:26:12
+photo: 1.png
+caption_header: Sample header
+caption: sample caption
+---
+```
+4. And finally, serve Jekyll source as you would normally.
 
+## [Demo](https://nadjetey.github.io/GridGallery)
 
-Here is a <a href="http://itsrifat.github.io/rifyll/" target="_blank">Demo</a>
+View this jekyll theme in action [here](https://nadjetey.github.io/GridGallery)
 
-To get started:
-* Fork this repo
-* Edit [_config.yml](_config.yml):
-  * Change logo_location
-* Edit [_data/menu.yml](_data/menu.yml) to edit menu
+## Screenshot
+![screenshot](https://raw.github.com/nadjetey/GridGallery/master/jggg.png)
 
-To create a post:
-* Create a **.md** or **.markdown** file in the _post directory. Add a thumbnail image for the post in the yml front matter, its shown as the post thumbnail in the homepage
+Localhost deployment
+=========
+After [downloading](https://github.com/nadjetey/GridGallery/archive/master.zip), use the normal process of serving a jekyll site. Navigate to the directory in terminal and type `jekyll build` followed by `jekyll serve`
+
+For more details, read [documentation](http://jekyllrb.com/)
